@@ -136,8 +136,9 @@ const Messenger = () => {
                     placeholder="write something..."
                     onChange={(e) => setNewMessage(e.target.value)}
                     value={newMessage}
+                 
                   ></textarea>
-                  <button className="chatSubmitButton" onClick={handleSubmit}>
+                  <button    disabled={!newMessage} className="chatSubmitButton" onClick={handleSubmit}>
                     Send
                   </button>
                 </div>
